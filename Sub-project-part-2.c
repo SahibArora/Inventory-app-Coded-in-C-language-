@@ -11,7 +11,7 @@
 double TAX = 0.13;
 
 // Item structure:
-struct Item             // defining Item as a type through structure having its own behaviour...
+struct Item             // defining Item as a type through structure, now Item has its own properties...
 { 
 	double price;    
 	int sku;    
@@ -21,7 +21,7 @@ struct Item             // defining Item as a type through structure having its 
 	char name[21];
 };
 
-// Sub-Projects 1's functions
+// Sub-Project 1's functions
 void welcome(void);
 void printTitle(void);
 void printFooter(double gTotal);
@@ -37,7 +37,7 @@ void GroceryInventorySystem(void);
 int menu(void);
 
 
-// Sub-Projects 2 functions...
+// Sub-Project 2's functions...
 double totalAfterTax(struct Item item);
 int isLowQuantity(struct Item item);
 struct Item itemEntry(int sku);
